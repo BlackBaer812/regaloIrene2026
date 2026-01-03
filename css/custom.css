@@ -1,0 +1,176 @@
+.bienvenida-blanco {
+    color: #fff !important;
+}
+.bg-img-inicio {
+    background-image: url('../img/entrada.webp');
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: brightness(0.7);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 16px #000, 0 0 8px #3a2415;
+}
+/* Transición suave para todos los elementos principales */
+.fade-transition {
+    transition: opacity 1.0s ease;
+    opacity: 1;
+}
+.fade-out {
+    opacity: 0;
+}
+#hoteles {
+    background: linear-gradient(135deg, rgba(255, 250, 240, 0.92) 0%, rgba(255, 240, 210, 0.85) 100%);
+    border-radius: 0.75rem;
+    padding: 3rem 1rem 2rem 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+#hotelesMerida, #hotelesPortugal {
+    background: rgba(255,255,255,0.85);
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid #fff;
+}
+#hoteles .card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 1px solid #f3e9d7;
+    margin-bottom: 2rem;
+}
+
+#hoteles .card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+#hoteles h2#feliz-navidad {
+    background: rgba(60, 40, 10, 0.12);
+    color: #4b3621;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    padding: 0.5em 2em;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    text-shadow: 1px 1px 4px #fff, 0 0 2px #fff;
+    display: inline-block;
+}
+#hotelesMerida .card-img-top,
+#hotelesPortugal .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+/* Unificar estilos visuales de Mérida y Portugal con Hoteles */
+
+/* Mérida: tonos cálidos arena/dorado */
+#centroMerida {
+    background: linear-gradient(135deg, #f7ecd7 0%, #e9cfa7 100%);
+    padding: 3rem 1rem 2rem 1rem;
+    box-shadow: 0 4px 24px rgba(200,170,100,0.10);
+    border: 1px solid #e9cfa7;
+}
+#centroMerida h2 {
+    background: rgba(200, 170, 100, 0.13);
+    color: #7a5a2f;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    padding: 0.5em 2em;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(200,170,100,0.10);
+    text-shadow: 1px 1px 4px #fff, 0 0 2px #fff;
+    display: inline-block;
+}
+
+/* Portugal: tonos azulados/verdosos suaves */
+#portugal {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+    padding: 3rem 1rem 2rem 1rem;
+    box-shadow: 0 4px 24px rgba(0, 150, 136, 0.10);
+    border: 1px solid #b2dfdb;
+}
+#portugal h2 {
+    background: rgba(0, 150, 136, 0.10);
+    color: #20635a;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    padding: 0.5em 2em;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0,150,136,0.10);
+    text-shadow: 1px 1px 4px #fff, 0 0 2px #fff;
+    display: inline-block;
+}
+
+body{
+    height: 100vh;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+#filaImagen, #centroMerida, #portugal {
+    height: 100%;
+}
+
+#feliz-navidad {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px #3a2415, 0 0 10px #000;
+    background: radial-gradient(circle, #b88a4a 0%, #3a2415 100%);
+    border-radius: 1rem;
+    padding: 0.5em 1.5em;
+    margin: 0.5em auto 1em auto;
+    display: inline-block;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.carruseles {
+    width: 1080px;
+    max-width: 100%;
+    height: 720px;
+}
+
+.carruseles .carousel-inner,
+.carruseles .carousel-item,
+.carruseles img {
+    height: 100%;
+}
+
+.carruseles img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+
+#imgEntrada{
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.card{
+    width: 24rem;
+    height: 28rem; /* Ajusta este valor según lo que necesites */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sep-vert{
+    width: 2rem;
+}
