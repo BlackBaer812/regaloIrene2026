@@ -244,8 +244,4 @@ body{
         height: 1rem;
         display: none;
     }
-    .container, .container-fluid {
-        padding-left: 0.2rem !important;
-        padding-right: 0.2rem !important;
-    }
 }
