@@ -3,11 +3,8 @@
 }
 .bg-img-inicio {
     background-image: url('../img/entrada.webp');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -36,7 +33,7 @@
     background: rgba(255,255,255,0.85);
     border-radius: 0.5rem;
     padding: 2rem 1.5rem 1.5rem 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     border: 1px solid #fff;
 }
@@ -45,7 +42,6 @@
     border-radius: 0.5rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.10);
     border: 1px solid #f3e9d7;
-    margin-bottom: 2rem;
 }
 
 #hoteles .card-img-top {
@@ -69,8 +65,11 @@
 #hotelesPortugal .card-img-top {
     height: 220px;
     object-fit: cover;
-    width: 100%;
+    width: 24rem;
+    max-width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Unificar estilos visuales de Mérida y Portugal con Hoteles */
@@ -178,14 +177,29 @@ body{
 /* Media queries para móvil y tablet */
 @media (max-width: 991.98px) {
     /* Tablet: Bootstrap md/lg breakpoint */
+    #hotelesMerida .card-img-top,
+    #hotelesPortugal .card-img-top {
+            width: 24rem; /* Las imágenes de los hoteles mantienen su ancho fijo en todos los dispositivos */
+            min-width: 0; /* Se mantiene el mínimo ancho */
+            max-width: 100%; /* Se mantiene el máximo ancho */
+    }
     .carruseles {
-        width: 100% !important;
+        width: 80vw !important;
         height: 400px !important;
     }
+
+    .carousel-item img {
+        width: 80vw !important;
+        object-fit: cover !important;
+        object-position: center top !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .card {
         width: 100% !important;
         height: auto !important;
-        margin-bottom: 2rem;
     }
     #hotelesMerida, #hotelesPortugal {
         padding: 1rem 0.5rem !important;
@@ -197,23 +211,23 @@ body{
         font-size: 1.5rem !important;
         padding: 0.5em 0.5em !important;
     }
-    .sep-vert {
-        width: 0;
-        height: 2rem;
-        display: none;
-    }
 }
 
 @media (max-width: 575.98px) {
     /* Móvil: Bootstrap xs/sm breakpoint */
+    #hotelesMerida .card-img-top,
+    #hotelesPortugal .card-img-top {
+            width: 100%; /* Las imágenes de los hoteles mantienen su ancho fijo en todos los dispositivos */
+            min-width: 0; /* Se mantiene el mínimo ancho */
+            max-width: 100%; /* Se mantiene el máximo ancho */
+    }
     .carruseles {
-        width: 100% !important;
+        width: 80vw !important;
         height: 220px !important;
     }
     .card {
         width: 100% !important;
         height: auto !important;
-        margin-bottom: 1.5rem;
     }
     #hotelesMerida, #hotelesPortugal {
         padding: 0.5rem 0.2rem !important;

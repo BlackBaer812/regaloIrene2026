@@ -46,6 +46,10 @@ window.addEventListener('DOMContentLoaded', () => {
     //Evento de click
     imgEntrada.addEventListener('click', () => {
         swapSection(filaImagen, centroMerida);
+        portugalStatus = true;
+        meridaStatus = true;
+        portugal.classList.add('d-none');
+        hoteles.classList.add('d-none');
     });
 
     //Evento de finalizar carrusel de Mérida
