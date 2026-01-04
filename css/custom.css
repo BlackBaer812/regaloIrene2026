@@ -1,3 +1,16 @@
+/* Fondo difuminado para los captions de los carruseles */
+
+.carousel-caption h5 {
+    display: inline-block;
+    background: rgba(30, 30, 30, 0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 0.75rem;
+    padding: 0.3rem 1rem;
+    color: #fff !important;
+    text-shadow: 1px 1px 6px #000, 0 0 4px #222;
+    margin-bottom: 0;
+}
 .bienvenida-blanco {
     color: #fff !important;
 }
