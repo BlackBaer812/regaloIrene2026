@@ -1,6 +1,6 @@
 /* Fondo difuminado para los captions de los carruseles */
 
-.carousel-caption h5 {
+.carousel-caption p {
     display: inline-block;
     background: rgba(30, 30, 30, 0.45);
     backdrop-filter: blur(6px);
@@ -10,6 +10,8 @@
     color: #fff !important;
     text-shadow: 1px 1px 6px #000, 0 0 4px #222;
     margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 .bienvenida-blanco {
     color: #fff !important;
@@ -223,6 +225,10 @@ body{
     #feliz-navidad, #centroMerida h2, #portugal h2, #hoteles h2#feliz-navidad {
         font-size: 1.5rem !important;
         padding: 0.5em 0.5em !important;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem !important;
     }
 }
 
