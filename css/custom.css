@@ -86,10 +86,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-/* Unificar estilos visuales de Mérida y Portugal con Hoteles */
-
-/* Mérida: tonos cálidos arena/dorado */
 #centroMerida {
     background: linear-gradient(135deg, #f7ecd7 0%, #e9cfa7 100%);
     padding: 3rem 1rem 2rem 1rem;
